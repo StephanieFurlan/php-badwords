@@ -10,8 +10,11 @@
       <title>PHP - Badwords</title>
    </head>
    <body>
+      <h1>Original paragraph</h1>
       <p><?php echo $paragraph ?></p>
-      <p>Paragraph length: <?php echo strlen($paragraph) ?></p>
-      <p>Paragraph length: <?php echo str_replace($badword,"***",$paragraph); ?></p>
+      <h1>Paragraph length</h1>
+      <p><?php echo strlen($paragraph)?></p>
+      <h1>Paragraph with ***</h1>
+      <p><?php echo str_replace($badword,"***",$paragraph); ?></p>
    </body>
 </html>
